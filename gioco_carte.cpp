@@ -467,9 +467,9 @@ class Mazzo {
 
             mani--;
 
-            int guadagno = 0;
-            guadagno = int(score / 10);
-            cout << "Hai guadagnato " << ARANCIONE << guadagno << RESET << " soldi" << endl;
+            double guadagno = 0;
+            guadagno = score / 10;
+            cout << "Hai guadagnato " << ARANCIONE << guadagno << RESET << " monete" << endl;
             soldi += guadagno;
         }
 
@@ -561,7 +561,7 @@ void menu(Mazzo m) {
                 break;
             case 7: 
                 system("clear");
-                cout << "\nHai guadagnato in tutto " << ARANCIONE << m.soldi << RESET << " soldi!\n" << endl;
+                cout << "\nHai guadagnato in tutto " << ARANCIONE << m.soldi << RESET << " monete!\n" << endl;
                 return;
             default: break;
         }
